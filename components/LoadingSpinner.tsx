@@ -28,7 +28,7 @@ export function LoadingSpinner({
       className={cn(
         'relative flex items-center justify-center',
         spinnerSize[size],
-        className
+        className,
       )}
       {...props}
     >
@@ -37,11 +37,11 @@ export function LoadingSpinner({
           'absolute h-full w-full rounded-full border-4 border-emerald-600 animate-spin',
           {
             'border-t-transparent': true, // Membuat efek putaran
-          }
+          },
         )}
       />
       <Image
-        src="/etahfizh_logo.svg"
+        src="./etahfizh_logo.svg"
         alt="Etahfizh Logo"
         width={logoSize[size]}
         height={logoSize[size]}
